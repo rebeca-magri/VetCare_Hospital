@@ -5,11 +5,11 @@
 }
 
 html{
-    /* font-size: 62.5%; */
+    font-size: var(--font-size-base);
     scroll-behavior: smooth;
-    /* background-color: ; */
-    font-family: "Poppins", sans-serif; ;
-    /* color: ; */
+    background-color: var(--color-bg-main);
+    font-family: var(--font-main);
+    color: var(--color-text-title) ;
 }
 
 ul, ol{
