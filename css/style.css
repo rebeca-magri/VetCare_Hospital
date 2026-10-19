@@ -1,2 +1,45 @@
 @import './variable.css';
 @import './reset.css';
+
+.menu__sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 100%;
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-sidebar-text);
+    padding: 30px 20px;
+}
+
+.menu__title{
+    margin-bottom: 1rem;
+}
+
+.section-hero__description{
+    justify-content: space-between;
+}
+
+.section-hero{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.section-hero__container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section-hero__article{
+    flex: 1;
+}
+
+.section-hero__aside{
+    flex: 1;
+}
