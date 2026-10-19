@@ -63,6 +63,7 @@ main{
 .section-hero__title{
     color: var(--color-text-title);
     font-size: var(--font-size-lg);
+    display: flex;
 }
 
 .aside__img-container,
@@ -72,4 +73,41 @@ main{
 
 .aside__img {
     height: auto;
+}
+
+.section-hero__card{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 280px;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: #dbe4f0;
+    border-top: 1px solid #bfc7d1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1000;
+}
+
+.footer__section {
+    display: flex;
+    align-items: center;
+    color: #475569;
+    justify-content: space-between;
 }
