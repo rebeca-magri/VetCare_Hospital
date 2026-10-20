@@ -2,8 +2,7 @@
 @import './reset.css';
 
 main{
-    height: 100vh;
-    width: 100%;
+    width: 100%; 
 }
 
 .menu__sidebar{
@@ -12,27 +11,35 @@ main{
     left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 30vh;
     height: 100%;
     background-color: var(--color-sidebar-bg);
     color: var(--color-sidebar-text);
     padding: 30px 20px;
+    z-index: 100;
 }
 
 .menu__title{
+    font-size: var(--font-size-lg);
     margin-bottom: 1.5rem;
-    justify-content: center; /* nao deu mt certo */
-    align-items: center;
+    text-align: center;
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .menu-nav__link{
+    font-size: var(--font-size-base);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     padding: 12px 16px;
-    border-radius: 6px;
-    text-align: center;
+    border-radius: var(--radius-sm);
+    text-align: start;
     transition: var(--transition);
 }
 
@@ -50,6 +57,7 @@ main{
     gap: 40px;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section-hero__article{
@@ -62,23 +70,28 @@ main{
 
 .section-hero__title{
     color: var(--color-text-title);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     display: flex;
 }
 
 .aside__img-container,
 .aside__img {
     width: 100%;
-}
-
-.aside__img {
     height: auto;
+    border-radius: var(--radius-md);
 }
 
 .section-hero__card{
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 280px;
+    display: flex;
+    background-color: var(--color-bg-card);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    flex: 1;
+    min-width: 280px;
+    flex-direction: column;
+    gap: 12px;
+    transition: var(--transition);
 }
 
 
