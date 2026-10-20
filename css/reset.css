@@ -5,12 +5,17 @@
 }
 
 html{
-    font-size: var(--font-size-base);
+    font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: var(--color-bg-main);
     font-family: var(--font-main);
     color: var(--color-text-body);
 }
+
+p{
+  font-size: var(--font-size-base);
+}
+
 
 ul, ol{
     list-style: none;
