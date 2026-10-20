@@ -24,7 +24,7 @@
     }
 
     .section-hero{
-        margin-left: 30vh;
+        margin-left: 40vh;
         flex-direction: column;
     }
 
@@ -54,18 +54,25 @@
 
     .footer {
         height: auto;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 }
 
 @media (min-width: 501px) and (max-width: 767px) {
+
+    .menu__sidebar{
+        width: 30vh;
+        flex-direction: column;
+    }
    
     .section-hero{
+        flex: 1 1 auto;
         margin-left: 30vh;
         flex-direction: column;
     }
 
     .section-hero__container{
+        flex: 1 1 auto;
         gap: 20px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -77,7 +84,6 @@
         min-width: 0;
     }
 
-
     .aside__img-container,
     .aside__img {
         width: 350px;
@@ -86,13 +92,51 @@
     }
 
     .whatsapp-btn{
-        right: 135px;
+        right: 65px;
         padding: 9px 16px;
+    }
+
+    .footer {
+        height: auto;
+        flex-wrap: wrap;
     }
 
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
+
+    .menu__sidebar{
+        width: 27vh;
+        flex-direction: column;
+    }
+
+    .section-hero{
+        flex: 1 1 auto;
+        margin-left: 30vh;
+        flex-direction: column;
+    }
+
+    .section-hero__container{
+        flex: 1 1 auto;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-hero__article,
+    .section-hero__aside{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .aside__img-container,
+    .aside__img {
+        width: 350px;
+        height: auto;
+        flex-wrap: wrap;
+    }
 }
 
-@media (min-width:1023px) {}
+@media (min-width:1023px) {
+
+}
