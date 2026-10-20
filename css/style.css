@@ -81,6 +81,13 @@ main{
     display: flex;
 }
 
+.section-hero__subtitle{
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+    font-size: var(--font-size-lg);
+    display: flex;
+}
+
 .aside__img-container,
 .aside__img {
     width: 100%;
